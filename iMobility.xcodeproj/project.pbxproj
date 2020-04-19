@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2FEC93738302B4B770211000 /* Pods_iMobility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBC4E1660DA0FD0B975171B /* Pods_iMobility.framework */; };
 		4A380D9C244A9EF200D930DE /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A380D98244A9EF100D930DE /* ListViewController.swift */; };
 		4A380D9D244A9EF200D930DE /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A380D99244A9EF100D930DE /* ListModel.swift */; };
 		4A380D9E244A9EF200D930DE /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A380D9A244A9EF200D930DE /* ListCell.swift */; };
@@ -29,35 +28,15 @@
 		4A4D9886244C872900C310BA /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4D9885244C872900C310BA /* WeatherViewModel.swift */; };
 		4A4D9889244C8DE100C310BA /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4D9888244C8DE100C310BA /* WeatherViewController.swift */; };
 		4A4D988B244C90BD00C310BA /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4D988A244C90BD00C310BA /* UIViewController+Extension.swift */; };
+		4A4D9895244CD8DA00C310BA /* WeatherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A4D9893244CD8DA00C310BA /* WeatherViewController.xib */; };
 		4AA85AA7244A4FD900CDED02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA85AA6244A4FD900CDED02 /* AppDelegate.swift */; };
-		4AA85AA9244A4FD900CDED02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA85AA8244A4FD900CDED02 /* ViewController.swift */; };
-		4AA85AAC244A4FD900CDED02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA85AAA244A4FD900CDED02 /* Main.storyboard */; };
 		4AA85AAE244A4FDB00CDED02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA85AAD244A4FDB00CDED02 /* Assets.xcassets */; };
 		4AA85AB1244A4FDB00CDED02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA85AAF244A4FDB00CDED02 /* LaunchScreen.storyboard */; };
-		4AA85ABC244A4FDB00CDED02 /* iMobilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA85ABB244A4FDB00CDED02 /* iMobilityTests.swift */; };
-		4AA85AC7244A4FDB00CDED02 /* iMobilityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA85AC6244A4FDB00CDED02 /* iMobilityUITests.swift */; };
-		55B422F8A9D164BCD82D596E /* Pods_iMobilityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9D4548C194CD60CD0D4B2E /* Pods_iMobilityUITests.framework */; };
-		DD69353A1DD8CF0B885A5677 /* Pods_iMobilityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749C0511E8D4BD1FA7B03B21 /* Pods_iMobilityTests.framework */; };
+		932BADA3F6B5B598D59FB7F3 /* libPods-iMobility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A29AA1D97BF0464BFA1B0198 /* libPods-iMobility.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		4AA85AB8244A4FDB00CDED02 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4AA85A9B244A4FD900CDED02 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4AA85AA2244A4FD900CDED02;
-			remoteInfo = iMobility;
-		};
-		4AA85AC3244A4FDB00CDED02 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4AA85A9B244A4FD900CDED02 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4AA85AA2244A4FD900CDED02;
-			remoteInfo = iMobility;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		020C2C4850BA33D471CA2647 /* libPods-iMobilityUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMobilityUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07CFEF2315828329081058C1 /* Pods-iMobilityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMobilityUITests.release.xcconfig"; path = "Target Support Files/Pods-iMobilityUITests/Pods-iMobilityUITests.release.xcconfig"; sourceTree = "<group>"; };
 		242D8DAEF0DC461F0A2230F3 /* Pods-iMobilityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMobilityUITests.debug.xcconfig"; path = "Target Support Files/Pods-iMobilityUITests/Pods-iMobilityUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4A380D98244A9EF100D930DE /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -81,26 +60,18 @@
 		4A4D9885244C872900C310BA /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		4A4D9888244C8DE100C310BA /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		4A4D988A244C90BD00C310BA /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		4A4D9893244CD8DA00C310BA /* WeatherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherViewController.xib; sourceTree = "<group>"; };
 		4AA85AA3244A4FD900CDED02 /* iMobility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMobility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA85AA6244A4FD900CDED02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4AA85AA8244A4FD900CDED02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4AA85AAB244A4FD900CDED02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4AA85AAD244A4FDB00CDED02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AA85AB0244A4FDB00CDED02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AA85AB2244A4FDB00CDED02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4AA85AB7244A4FDB00CDED02 /* iMobilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMobilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AA85ABB244A4FDB00CDED02 /* iMobilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMobilityTests.swift; sourceTree = "<group>"; };
-		4AA85ABD244A4FDB00CDED02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4AA85AC2244A4FDB00CDED02 /* iMobilityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMobilityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AA85AC6244A4FDB00CDED02 /* iMobilityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMobilityUITests.swift; sourceTree = "<group>"; };
-		4AA85AC8244A4FDB00CDED02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71DFBBBEA2DB2EDBE8608141 /* Pods-iMobilityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMobilityTests.debug.xcconfig"; path = "Target Support Files/Pods-iMobilityTests/Pods-iMobilityTests.debug.xcconfig"; sourceTree = "<group>"; };
-		749C0511E8D4BD1FA7B03B21 /* Pods_iMobilityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMobilityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8450F302FCE405C22FBA066B /* Pods-iMobility.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMobility.debug.xcconfig"; path = "Target Support Files/Pods-iMobility/Pods-iMobility.debug.xcconfig"; sourceTree = "<group>"; };
+		A29AA1D97BF0464BFA1B0198 /* libPods-iMobility.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMobility.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F61BABC464C4AF77E0D809 /* Pods-iMobilityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMobilityTests.release.xcconfig"; path = "Target Support Files/Pods-iMobilityTests/Pods-iMobilityTests.release.xcconfig"; sourceTree = "<group>"; };
+		C7197A76FBEAE9B639E5B6ED /* libPods-iMobilityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iMobilityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5FE2935B349836A4922C75 /* Pods-iMobility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMobility.release.xcconfig"; path = "Target Support Files/Pods-iMobility/Pods-iMobility.release.xcconfig"; sourceTree = "<group>"; };
-		DD9D4548C194CD60CD0D4B2E /* Pods_iMobilityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMobilityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFBC4E1660DA0FD0B975171B /* Pods_iMobility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMobility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,23 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FEC93738302B4B770211000 /* Pods_iMobility.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4AA85AB4244A4FDB00CDED02 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DD69353A1DD8CF0B885A5677 /* Pods_iMobilityTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4AA85ABF244A4FDB00CDED02 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				55B422F8A9D164BCD82D596E /* Pods_iMobilityUITests.framework in Frameworks */,
+				932BADA3F6B5B598D59FB7F3 /* libPods-iMobility.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,16 +203,25 @@
 			children = (
 				4A4D9885244C872900C310BA /* WeatherViewModel.swift */,
 				4A4D9888244C8DE100C310BA /* WeatherViewController.swift */,
+				4A4D9893244CD8DA00C310BA /* WeatherViewController.xib */,
 			);
 			path = "Weather Details";
+			sourceTree = "<group>";
+		};
+		4A4D9897244CE1EB00C310BA /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4AA85AB2244A4FDB00CDED02 /* Info.plist */,
+				4AA85AAD244A4FDB00CDED02 /* Assets.xcassets */,
+				4AA85AAF244A4FDB00CDED02 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		4AA85A9A244A4FD900CDED02 = {
 			isa = PBXGroup;
 			children = (
 				4AA85AA5244A4FD900CDED02 /* iMobility */,
-				4AA85ABA244A4FDB00CDED02 /* iMobilityTests */,
-				4AA85AC5244A4FDB00CDED02 /* iMobilityUITests */,
 				4AA85AA4244A4FD900CDED02 /* Products */,
 				8081E1CF98D481C763F0B475 /* Pods */,
 				7389E83A2537E9D58840995F /* Frameworks */,
@@ -268,8 +232,6 @@
 			isa = PBXGroup;
 			children = (
 				4AA85AA3244A4FD900CDED02 /* iMobility.app */,
-				4AA85AB7244A4FDB00CDED02 /* iMobilityTests.xctest */,
-				4AA85AC2244A4FDB00CDED02 /* iMobilityUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -277,44 +239,22 @@
 		4AA85AA5244A4FD900CDED02 /* iMobility */ = {
 			isa = PBXGroup;
 			children = (
+				4A4D9897244CE1EB00C310BA /* SupportingFiles */,
 				4A380DBC244BC21100D930DE /* MetaData */,
 				4A380DB5244B917800D930DE /* Foundation */,
 				4A380DB0244AA05400D930DE /* Services */,
 				4A380DA3244A9F9C00D930DE /* Model */,
 				4A380D96244A9ED700D930DE /* Application */,
-				4AA85AA8244A4FD900CDED02 /* ViewController.swift */,
-				4AA85AAA244A4FD900CDED02 /* Main.storyboard */,
-				4AA85AAD244A4FDB00CDED02 /* Assets.xcassets */,
-				4AA85AAF244A4FDB00CDED02 /* LaunchScreen.storyboard */,
-				4AA85AB2244A4FDB00CDED02 /* Info.plist */,
 			);
 			path = iMobility;
-			sourceTree = "<group>";
-		};
-		4AA85ABA244A4FDB00CDED02 /* iMobilityTests */ = {
-			isa = PBXGroup;
-			children = (
-				4AA85ABB244A4FDB00CDED02 /* iMobilityTests.swift */,
-				4AA85ABD244A4FDB00CDED02 /* Info.plist */,
-			);
-			path = iMobilityTests;
-			sourceTree = "<group>";
-		};
-		4AA85AC5244A4FDB00CDED02 /* iMobilityUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4AA85AC6244A4FDB00CDED02 /* iMobilityUITests.swift */,
-				4AA85AC8244A4FDB00CDED02 /* Info.plist */,
-			);
-			path = iMobilityUITests;
 			sourceTree = "<group>";
 		};
 		7389E83A2537E9D58840995F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DFBC4E1660DA0FD0B975171B /* Pods_iMobility.framework */,
-				749C0511E8D4BD1FA7B03B21 /* Pods_iMobilityTests.framework */,
-				DD9D4548C194CD60CD0D4B2E /* Pods_iMobilityUITests.framework */,
+				A29AA1D97BF0464BFA1B0198 /* libPods-iMobility.a */,
+				C7197A76FBEAE9B639E5B6ED /* libPods-iMobilityTests.a */,
+				020C2C4850BA33D471CA2647 /* libPods-iMobilityUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -343,7 +283,6 @@
 				4AA85A9F244A4FD900CDED02 /* Sources */,
 				4AA85AA0244A4FD900CDED02 /* Frameworks */,
 				4AA85AA1244A4FD900CDED02 /* Resources */,
-				43A9D9DB7B738885013822E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -353,44 +292,6 @@
 			productName = iMobility;
 			productReference = 4AA85AA3244A4FD900CDED02 /* iMobility.app */;
 			productType = "com.apple.product-type.application";
-		};
-		4AA85AB6244A4FDB00CDED02 /* iMobilityTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4AA85ACE244A4FDB00CDED02 /* Build configuration list for PBXNativeTarget "iMobilityTests" */;
-			buildPhases = (
-				2161056F0D800B29863722FA /* [CP] Check Pods Manifest.lock */,
-				4AA85AB3244A4FDB00CDED02 /* Sources */,
-				4AA85AB4244A4FDB00CDED02 /* Frameworks */,
-				4AA85AB5244A4FDB00CDED02 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4AA85AB9244A4FDB00CDED02 /* PBXTargetDependency */,
-			);
-			name = iMobilityTests;
-			productName = iMobilityTests;
-			productReference = 4AA85AB7244A4FDB00CDED02 /* iMobilityTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		4AA85AC1244A4FDB00CDED02 /* iMobilityUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4AA85AD1244A4FDB00CDED02 /* Build configuration list for PBXNativeTarget "iMobilityUITests" */;
-			buildPhases = (
-				3455DF9B8B5EAED124C94FAB /* [CP] Check Pods Manifest.lock */,
-				4AA85ABE244A4FDB00CDED02 /* Sources */,
-				4AA85ABF244A4FDB00CDED02 /* Frameworks */,
-				4AA85AC0244A4FDB00CDED02 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4AA85AC4244A4FDB00CDED02 /* PBXTargetDependency */,
-			);
-			name = iMobilityUITests;
-			productName = iMobilityUITests;
-			productReference = 4AA85AC2244A4FDB00CDED02 /* iMobilityUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -404,14 +305,6 @@
 				TargetAttributes = {
 					4AA85AA2244A4FD900CDED02 = {
 						CreatedOnToolsVersion = 10.1;
-					};
-					4AA85AB6244A4FDB00CDED02 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 4AA85AA2244A4FD900CDED02;
-					};
-					4AA85AC1244A4FDB00CDED02 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 4AA85AA2244A4FD900CDED02;
 					};
 				};
 			};
@@ -429,8 +322,6 @@
 			projectRoot = "";
 			targets = (
 				4AA85AA2244A4FD900CDED02 /* iMobility */,
-				4AA85AB6244A4FDB00CDED02 /* iMobilityTests */,
-				4AA85AC1244A4FDB00CDED02 /* iMobilityUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -440,114 +331,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A4D9895244CD8DA00C310BA /* WeatherViewController.xib in Resources */,
 				4AA85AB1244A4FDB00CDED02 /* LaunchScreen.storyboard in Resources */,
 				4A380DBE244BC23800D930DE /* cityList.json in Resources */,
 				4AA85AAE244A4FDB00CDED02 /* Assets.xcassets in Resources */,
-				4AA85AAC244A4FD900CDED02 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4AA85AB5244A4FDB00CDED02 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4AA85AC0244A4FDB00CDED02 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2161056F0D800B29863722FA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iMobilityTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3455DF9B8B5EAED124C94FAB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iMobilityUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		43A9D9DB7B738885013822E4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iMobility/Pods-iMobility-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
-				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iMobility/Pods-iMobility-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5C9F9CD664121B481BE8D4A8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -582,7 +375,6 @@
 				4A380DB4244AA05C00D930DE /* DataLoader.swift in Sources */,
 				4A4D987F244C6E8E00C310BA /* Bundle+Extension.swift in Sources */,
 				4A4D9889244C8DE100C310BA /* WeatherViewController.swift in Sources */,
-				4AA85AA9244A4FD900CDED02 /* ViewController.swift in Sources */,
 				4A4D9886244C872900C310BA /* WeatherViewModel.swift in Sources */,
 				4A380DA1244A9F0C00D930DE /* SceneDelegate.swift in Sources */,
 				4AA85AA7244A4FD900CDED02 /* AppDelegate.swift in Sources */,
@@ -602,46 +394,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4AA85AB3244A4FDB00CDED02 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4AA85ABC244A4FDB00CDED02 /* iMobilityTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4AA85ABE244A4FDB00CDED02 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4AA85AC7244A4FDB00CDED02 /* iMobilityUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		4AA85AB9244A4FDB00CDED02 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4AA85AA2244A4FD900CDED02 /* iMobility */;
-			targetProxy = 4AA85AB8244A4FDB00CDED02 /* PBXContainerItemProxy */;
-		};
-		4AA85AC4244A4FDB00CDED02 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4AA85AA2244A4FD900CDED02 /* iMobility */;
-			targetProxy = 4AA85AC3244A4FDB00CDED02 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		4AA85AAA244A4FD900CDED02 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4AA85AAB244A4FD900CDED02 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4AA85AAF244A4FDB00CDED02 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -776,7 +531,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZT2732RYS7;
-				INFOPLIST_FILE = iMobility/Info.plist;
+				INFOPLIST_FILE = iMobility/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -796,7 +551,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZT2732RYS7;
-				INFOPLIST_FILE = iMobility/Info.plist;
+				INFOPLIST_FILE = iMobility/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -806,92 +561,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		4AA85ACF244A4FDB00CDED02 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71DFBBBEA2DB2EDBE8608141 /* Pods-iMobilityTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZT2732RYS7;
-				INFOPLIST_FILE = iMobilityTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Osama.iMobilityTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iMobility.app/iMobility";
-			};
-			name = Debug;
-		};
-		4AA85AD0244A4FDB00CDED02 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3F61BABC464C4AF77E0D809 /* Pods-iMobilityTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZT2732RYS7;
-				INFOPLIST_FILE = iMobilityTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Osama.iMobilityTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iMobility.app/iMobility";
-			};
-			name = Release;
-		};
-		4AA85AD2244A4FDB00CDED02 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 242D8DAEF0DC461F0A2230F3 /* Pods-iMobilityUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZT2732RYS7;
-				INFOPLIST_FILE = iMobilityUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Osama.iMobilityUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iMobility;
-			};
-			name = Debug;
-		};
-		4AA85AD3244A4FDB00CDED02 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07CFEF2315828329081058C1 /* Pods-iMobilityUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZT2732RYS7;
-				INFOPLIST_FILE = iMobilityUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Osama.iMobilityUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iMobility;
 			};
 			name = Release;
 		};
@@ -912,24 +581,6 @@
 			buildConfigurations = (
 				4AA85ACC244A4FDB00CDED02 /* Debug */,
 				4AA85ACD244A4FDB00CDED02 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4AA85ACE244A4FDB00CDED02 /* Build configuration list for PBXNativeTarget "iMobilityTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4AA85ACF244A4FDB00CDED02 /* Debug */,
-				4AA85AD0244A4FDB00CDED02 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4AA85AD1244A4FDB00CDED02 /* Build configuration list for PBXNativeTarget "iMobilityUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4AA85AD2244A4FDB00CDED02 /* Debug */,
-				4AA85AD3244A4FDB00CDED02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

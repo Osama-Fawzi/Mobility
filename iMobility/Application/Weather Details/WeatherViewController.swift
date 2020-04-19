@@ -13,6 +13,10 @@ import RxCocoa
 
 class WeatherViewController: UIViewController {
         
+    @IBOutlet weak var highVal: UILabel!
+    @IBOutlet weak var lowVal: UILabel!
+    @IBOutlet weak var humVal: UILabel!
+    @IBOutlet weak var presVal: UILabel!
     
     let viewModel: WeatherViewModel
     var disposeBag = DisposeBag()
@@ -44,19 +48,7 @@ class WeatherViewController: UIViewController {
         self.viewModel.data
             .subscribe(onNext: { [weak self] (data) in
                 guard let self = self else {return}
-                self.view.backgroundColor = .white
-                let label = UILabel()
-                label.font = UIFont.boldSystemFont(ofSize: 20)
-                label.textAlignment = .center
-                label.numberOfLines = 0
-                label.text = data.name
-                
-                label.translatesAutoresizingMaskIntoConstraints = false
-                self.view.addSubview(label)
-                label.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-                label.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
-                label.leftAnchor.constraint(lessThanOrEqualTo: self.view.leftAnchor, constant: 10).isActive = true
-                label.topAnchor.constraint(lessThanOrEqualTo: self.view.topAnchor, constant: 10).isActive = true
+                self.reloadData(data)
             })
             .disposed(by: self.disposeBag)
 
@@ -73,6 +65,15 @@ class WeatherViewController: UIViewController {
 //        self.viewModel.isLoading
 //            .bind(to: self.pullToRefresh.rx.isRefreshing)
 //            .disposed(by: self.disposeBag)
+        
+    }
+    
+    private func reloadData(_ data: Weather) {
+        
+        highVal.text = "\(data.main.tempMax)"
+        lowVal.text = "\(data.main.tempMin)"
+        humVal.text = "\(data.main.humidity)"
+        presVal.text = "\(data.main.pressure)"
         
     }
     

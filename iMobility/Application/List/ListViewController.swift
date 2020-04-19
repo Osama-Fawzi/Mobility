@@ -159,7 +159,7 @@ extension ListViewController {
         searchBar.searchTextField.textColor = .darkText
         searchBar.backgroundColor = .lightGray
         searchBar.showsCancelButton = true
-        searchBar.placeholder = "Please enter text to start searching..."
+        searchBar.placeholder = "Please enter city name..."
         searchBar.keyboardType = .default
         searchBar.autocorrectionType = .no
         searchBar.autocapitalizationType = .none
