@@ -38,11 +38,16 @@
 		</dict>
 	</dict>
 	<key>baseURL</key>
-	<string>api.openweathermap.org</string>
+	<string>http://api.openweathermap.org</string>
 	<key>urlPrefix</key>
 	<string>/data/2.5</string>
 	<key>apiKey</key>
-	<string> c307c2ff1ff82fc934cac7b9325e8ded</string>
+	<string>c307c2ff1ff82fc934cac7b9325e8ded</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

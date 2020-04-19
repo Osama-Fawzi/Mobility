@@ -34,7 +34,7 @@ final class DataLoader {
     let engine: NetworkEngine
     
     // MARK: - Init
-    init(base: String,
+    init(base: String = Bundle.main.baseurl,
          engine: NetworkEngine) throws {
         guard let url = URL(string: base) else {
             throw Error(with: InitError.invalidBase)
@@ -45,12 +45,11 @@ final class DataLoader {
     
     // MARK: -
     // MARK: Load
-    func loadItems(with cityid:Int) -> Observable<Model.Service.Item> {
+    func loadItems(with cityid:Int) -> Observable<Weather> {
         do {
-            let request = try self._constructRequest(with: "/weather?id=\(cityid)")
+            let request = try self._constructRequest(with: .weather(id: cityid))
             return self.engine
                 .perform(request: request)
-                //.debug("Received data:")
                 .catchError({ (error) -> Observable<Data> in
                     guard let urlError = error as? URLError,
                         [URLError.networkConnectionLost,
@@ -59,12 +58,13 @@ final class DataLoader {
                     }
                     return Observable.error(Error(with: LoadingError.noConnection, underlyingError: error))
                 })
-                .map({ (data) -> Model.Service.Item in
-                    return try JSONDecoder().decode(Model.Service.Item.self,
+                .map({ (data) -> Weather in
+                    return try JSONDecoder().decode(Weather.self,
                                                     from: data)
                 })
         }
         catch {
+            print("Could not decode data with error : \(error)")
             return Observable.error(error)
         }
     }
@@ -92,7 +92,7 @@ final class DataLoader {
     }
     
     // MARK: - Private
-    private func _constructRequest(with relativePath: String) throws -> Request {
+    private func _constructRequest(with relativePath: Endpoints) throws -> Request {
         return try Request(base: self.baseURL,
                            relativePath: relativePath)
     }

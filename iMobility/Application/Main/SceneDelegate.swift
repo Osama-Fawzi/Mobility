@@ -24,9 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         do {
             self.window = UIWindow(frame: UIScreen.main.bounds)
-            let baseurl = Bundle.main.baseurl
-            let dataLoader = try DataLoader(base: baseurl,
-                                            engine: SessionManager(configuration: URLSessionConfiguration.default))
+            let dataLoader = try DataLoader(engine: SessionManager(configuration: URLSessionConfiguration.default))
             let viewModel = ListViewModel(dataLoader: dataLoader)
             let viewController = ListViewController.init(viewModel: viewModel)
             self.window?.rootViewController = viewController

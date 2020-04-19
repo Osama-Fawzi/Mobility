@@ -7,14 +7,13 @@
 //
 
 import UIKit
-import MessageUI
 
-//import Strongify
 import RxSwift
 import RxCocoa
 import RxDataSources
 import RxSwiftExt
 import RxOptional
+import Alamofire
 
 final class ListViewController: UIViewController {
     
@@ -215,45 +214,18 @@ extension ListViewController {
     
 }
 
-extension ListViewController {
-    
-    private func showAlert(with title: String,
-                           message: String) {
-        let alertController = UIAlertController(title: title,
-                                                message: message,
-                                                preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-        self.present(alertController, animated: true, completion: nil)
-    }
-    
-}
 
 extension ListViewController {
     
     private func didSelect(item: ViewModelType.ModelType) {
-        guard MFMailComposeViewController.canSendMail() else {
-            self.showAlert(with: "Error", message: "You can't send an email. Please check your settings.")
-            return
-        }
-        let compose = MFMailComposeViewController()
-        compose.mailComposeDelegate = self
-        compose.setSubject(item.title)
-        compose.setMessageBody(item.description, isHTML: false)
-        self.present(compose, animated: true, completion: nil)
-    }
-    
-}
-
-extension ListViewController: MFMailComposeViewControllerDelegate {
-    
-    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Swift.Error?) {
-        guard case .failed = result, let error = error else {
-            self.dismiss(animated: true, completion: nil)
-            return
-        }
-        self.dismiss(animated: true) {[weak self] in
-            guard let self = self else {return}
-            self.showAlert(with: "Error", message: error.localizedDescription)
+        do {
+            let dataLoader = try DataLoader(engine: SessionManager(configuration: URLSessionConfiguration.default))
+            let viewModel = WeatherViewModel(dataLoader: dataLoader, cityId: item.identifier)
+            let viewController = WeatherViewController.init(viewModel: viewModel)
+            present(viewController, animated: true, completion: nil)
+//            self.navigationController?.pushViewController(viewController, animated: true)
+        } catch {
+            print("Could not intialized networkEnginer for err : \(error)")
         }
     }
     

@@ -38,13 +38,16 @@ extension Request {
 
     
     init(base: URL,
-         relativePath: String) throws {
+         relativePath: Endpoints) throws {
         guard var urlComponents = URLComponents(url: base,
                                                 resolvingAgainstBaseURL: true)
             else {
             throw InitError.base
         }
-        urlComponents.path =  Bundle.main.urlPrefix + relativePath + "&appid=\(Bundle.main.apiKey)"
+        
+        urlComponents.path = Bundle.main.urlPrefix + relativePath.path
+        urlComponents.queryItems = relativePath.queryItems
+        
         guard let url = urlComponents.url else {
             throw InitError.relative
         }
@@ -94,4 +97,24 @@ extension SessionManager: NetworkEngine {
         }
     }
     
+}
+
+
+enum Endpoints {
+    // more Endpoints can be added
+    case weather(id: Int)
+    
+    var path:String {
+        switch  self {
+        case .weather:
+            return "/weather"
+        }
+    }
+    
+    var queryItems: [URLQueryItem] {
+        switch  self {
+        case .weather(let cityId):
+            return [URLQueryItem(name:"id", value: "\(cityId)"),URLQueryItem(name:"appid", value: Bundle.main.apiKey)]
+        }
+    }
 }

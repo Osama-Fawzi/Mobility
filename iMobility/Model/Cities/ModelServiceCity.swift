@@ -8,7 +8,6 @@
 
 import Foundation
 
-//Single city
 extension Model.Service {
     
     struct Item {
@@ -21,24 +20,17 @@ extension Model.Service {
         
     }
     
-    struct Coordinate {
-        let longitude: Double
-        let latitude: Double
-    }
+}
+
+struct Coordinate {
+    
+    let longitude: Double
+    let latitude: Double
     
 }
 
 
 
-
-extension Model.Service.Coordinate: Codable{
-    private enum CodingKeys: String, CodingKey {
-        
-        case longitude = "lat"
-        case latitude = "lon"
-
-    }
-}
 
 extension Model.Service.Item: Codable {
     
@@ -54,8 +46,17 @@ extension Model.Service.Item: Codable {
     
 }
 
+extension Coordinate: Codable{
+    private enum CodingKeys: String, CodingKey {
+        
+        case longitude = "lat"
+        case latitude = "lon"
+
+    }
+}
+
 extension Model.Service.Item: Equatable { }
-extension Model.Service.Coordinate: Equatable { }
+extension Coordinate: Equatable { }
 
 extension Model.Service.Item {
     
