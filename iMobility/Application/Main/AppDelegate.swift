@@ -7,14 +7,34 @@
 //
 
 import UIKit
+import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+            // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
+            // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
+            // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+            do {
+                self.window = UIWindow(frame: UIScreen.main.bounds)
+                let dataLoader = try DataLoader(engine: SessionManager(configuration: URLSessionConfiguration.default))
+                let viewModel = ListViewModel(dataLoader: dataLoader)
+                let viewController = ListViewController.init(viewModel: viewModel)
+                let nav = UINavigationController()
+                self.window?.rootViewController = nav
+                nav.pushViewController(viewController, animated: true)
+                self.window?.makeKeyAndVisible()
+            }
+            catch {
+                fatalError(error.localizedDescription)
+            }
+        
         return true
     }
 

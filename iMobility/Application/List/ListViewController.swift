@@ -155,8 +155,11 @@ extension ListViewController {
                                  height: 50)
         searchBar.searchBarStyle = .default
         searchBar.backgroundColor = .lightGray
-        searchBar.searchTextField.backgroundColor = .white
-        searchBar.searchTextField.textColor = .darkText
+        
+        if #available(iOS 13, *) {
+            searchBar.searchTextField.backgroundColor = .white
+            searchBar.searchTextField.textColor = .darkText
+        }
         searchBar.backgroundColor = .lightGray
         searchBar.showsCancelButton = true
         searchBar.placeholder = "Please enter city name..."
@@ -222,8 +225,17 @@ extension ListViewController {
             let dataLoader = try DataLoader(engine: SessionManager(configuration: URLSessionConfiguration.default))
             let viewModel = WeatherViewModel(dataLoader: dataLoader, cityId: item.identifier)
             let viewController = WeatherViewController.init(viewModel: viewModel)
-            present(viewController, animated: true, completion: nil)
-//            self.navigationController?.pushViewController(viewController, animated: true)
+            
+            if #available(iOS 13.0, *){
+                
+                present(viewController, animated: true, completion: nil)
+                
+            } else {
+                
+                navigationController?.pushViewController(viewController, animated: true)
+                
+            }
+            
         } catch {
             print("Could not intialized networkEnginer for err : \(error)")
         }

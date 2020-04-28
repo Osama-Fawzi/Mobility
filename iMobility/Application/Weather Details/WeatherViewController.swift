@@ -20,7 +20,9 @@ class WeatherViewController: UIViewController {
     
     let viewModel: WeatherViewModel
     var disposeBag = DisposeBag()
-        
+    
+    @IBOutlet weak var loader: UIActivityIndicatorView!
+    
     init(viewModel: WeatherViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -60,11 +62,12 @@ class WeatherViewController: UIViewController {
             })
             .disposed(by: self.disposeBag)
         
-        
         //Indicator
-//        self.viewModel.isLoading
-//            .bind(to: self.pullToRefresh.rx.isRefreshing)
-//            .disposed(by: self.disposeBag)
+        loader.startAnimating()
+        self.viewModel.isLoading
+            .map({!$0})
+            .bind(to: self.loader.rx.isHidden)
+            .disposed(by: self.disposeBag)
         
     }
     

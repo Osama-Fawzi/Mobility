@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="highVal" destination="hQy-Bq-432" id="scJ-rH-z0z"/>
                 <outlet property="humVal" destination="ecv-Tg-X5O" id="m9j-gp-Vag"/>
+                <outlet property="loader" destination="1Yj-D4-CsH" id="hah-sO-3hK"/>
                 <outlet property="lowVal" destination="v2R-EY-m8j" id="vkL-yF-1d6"/>
                 <outlet property="presVal" destination="DOX-hb-en8" id="jIl-z0-GGb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -95,11 +96,16 @@
                         </stackView>
                     </subviews>
                 </stackView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="1Yj-D4-CsH">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="AL6-O0-rXW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="5XD-dg-sUu"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AL6-O0-rXW" secondAttribute="trailing" constant="10" id="7Zi-04-wNL"/>
+                <constraint firstItem="1Yj-D4-CsH" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Sfo-Yz-WI4"/>
+                <constraint firstItem="1Yj-D4-CsH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cgk-wQ-ZiZ"/>
                 <constraint firstItem="AL6-O0-rXW" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="yXu-FH-Eew"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
